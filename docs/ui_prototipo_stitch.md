@@ -14,6 +14,7 @@ El prototipo cubre el flujo completo dentro de la aplicación:
 Este flujo garantiza una navegación clara desde la entrada a la app hasta la experiencia de juego y administración del perfil.
 ________________________________________
 🖼️ 2. Pantallas del Prototipo
+
 A continuación se presentan las 8 pantallas con su descripción detallada.
 ________________________________________
 🌟 Pantalla 1 – Splash Screen
