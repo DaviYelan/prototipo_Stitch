@@ -1,172 +1,175 @@
-UI – Prototipo en Stitch
+🎨 Prototipo UI – Aplicación de Casino Online (Stitch)
 
-Este documento describe el flujo principal de la aplicación de casino online y detalla cada una de las 8 pantallas diseñadas en Stitch, incluyendo propósito, componentes esenciales y referencias a las capturas correspondientes.
+Este documento describe el flujo principal del prototipo diseñado en Stitch, junto con la especificación de cada una de las pantallas requeridas: propósito, componentes, estructura y referencia a capturas incluidas en /docs/img/.
 
-1. Breve descripción del flujo
+🔁 1. Flujo General del Usuario
 
-El prototipo cubre el flujo central de un usuario dentro de la app:
+El prototipo cubre el flujo completo dentro de la aplicación:
 
-Splash Screen: La app se inicia y muestra la identidad visual principal.
+Splash Screen → Identidad visual inicial
 
-Login: El usuario ingresa con credenciales o navega al registro.
+Login → Acceso del usuario
 
-Registro: Permite crear una cuenta nueva.
+Registro → Creación de cuenta
 
-Dashboard: Muestra las categorías principales de juegos y accesos rápidos.
+Dashboard → Centro principal y acceso a juegos
 
-Selección de juego: El usuario elige un juego (poker, slots, blackjack, ruleta).
+Selección de Juego → Lista de juegos disponibles
 
-Pantalla de juego: Presenta la interfaz base donde se visualizaría el juego seleccionado.
+Interfaz de Juego → Base visual del juego seleccionado
 
-Billetera: Permite depósitos, retiros y ver el historial.
+Billetera → Gestión de saldo (depósitos, retiros, historial)
 
-Perfil y Configuración: Muestra datos del usuario y permite cambiar ajustes como modo claro/oscuro.
+Perfil / Configuración → Ajustes, datos y preferencias
 
-El flujo completo garantiza navegación coherente desde el inicio de sesión hasta la gestión del perfil, pasando por selección y acceso a juegos.
+Este flujo garantiza una navegación clara desde la entrada a la app hasta la experiencia de juego y administración del perfil.
 
-2. Pantallas
-Pantalla 1 – Splash Screen
+🖼️ 2. Pantallas del Prototipo
 
-Propósito:
-Mostrar el logotipo de la app y cargar los recursos iniciales antes de acceder al login.
+A continuación se presentan las 8 pantallas con su descripción detallada.
 
-Componentes principales:
+🌟 Pantalla 1 – Splash Screen
 
-Logo
+📌 Propósito:
+Introducir la marca y mostrar un breve cargador antes de la app.
 
-Animación o indicador de carga
+🧩 Componentes:
 
-Fondo en modo claro/oscuro
+Logotipo principal
 
-Captura:
+Indicador de carga
+
+Fondo adaptable a modo claro/oscuro
+
+🖼️ Captura:
 /docs/img/splash.png
 
-Pantalla 2 – Login
+🔐 Pantalla 2 – Login
 
-Propósito:
-Permitir que el usuario acceda a su cuenta.
+📌 Propósito:
+Permitir que el usuario acceda con sus credenciales.
 
-Componentes principales:
+🧩 Componentes:
 
-Formulario (email, contraseña)
+Formulario: email + contraseña
 
 Botón Iniciar sesión
 
-Botón Registrarse
+Botón secundario Registrarse
 
 Enlace “¿Olvidaste tu contraseña?”
 
-Toggle modo claro/oscuro
+Toggle para modo claro/oscuro
 
-Captura:
+🖼️ Captura:
 /docs/img/login.png
 
-Pantalla 3 – Registro
+📝 Pantalla 3 – Registro
 
-Propósito:
-Crear una nueva cuenta con datos básicos del usuario.
+📌 Propósito:
+Crear una nueva cuenta dentro de la aplicación.
 
-Componentes principales:
+🧩 Componentes:
 
-Formulario (nombre, email, contraseña, confirmación)
+Formulario con datos básicos
 
 Botón Crear cuenta
 
 Botón Volver al login
 
-Indicadores de error o validación
+Mensajes de error y validación
 
-Captura:
+🖼️ Captura:
 /docs/img/registro.png
 
-Pantalla 4 – Dashboard principal
+🏠 Pantalla 4 – Dashboard Principal
 
-Propósito:
-Ofrecer acceso rápido a los juegos y mostrar el estado del usuario (saldo, notificaciones).
+📌 Propósito:
+Actuar como punto central de navegación hacia todos los juegos y secciones.
 
-Componentes principales:
+🧩 Componentes:
 
 Navbar + menú lateral
 
-Cards de juegos (póker, tragamonedas, blackjack, ruleta)
+Cards de juegos
 
 Indicador de saldo
 
 Categorías y filtros
 
-Botones CTA (Jugar)
+Botones CTA Jugar
 
-Captura:
+🖼️ Captura:
 /docs/img/dashboard.png
 
-Pantalla 5 – Selección de juego
+🎮 Pantalla 5 – Selección de Juego
 
-Propósito:
-Listar los juegos disponibles dentro de una categoría.
+📌 Propósito:
+Presentar la lista de juegos disponibles dentro de una categoría.
 
-Componentes principales:
+🧩 Componentes:
 
-Lista o grid de juegos
+Grid/lista de juegos
 
-Cards con imagen y descripción
+Imagen + nombre + CTA
 
-Botón CTA Jugar ahora
+Filtros por tipo de juego
 
-Filtros (popular, nuevos, jackpots)
+Cards responsivas
 
-Captura:
+🖼️ Captura:
 /docs/img/seleccion_juego.png
 
-Pantalla 6 – Pantalla de juego
+🃏 Pantalla 6 – Interfaz de Juego
 
-Propósito:
-Presentar la estructura base del juego seleccionado.
+📌 Propósito:
+Mostrar la estructura base donde se desarrollaría el juego seleccionado.
 
-Componentes principales:
+🧩 Componentes:
 
-Área principal del juego
+Área central del juego
 
-Botones de acción (Apostar, Retirar, Auto-play si aplica)
+Botones de acción (Apostar, Retirar, etc.)
 
-Indicador de saldo actual
+Saldo visible
 
-Barra superior con navegación
+Barra superior de navegación
 
-Captura:
+🖼️ Captura:
 /docs/img/juego.png
 
-Pantalla 7 – Billetera
+💰 Pantalla 7 – Billetera
 
-Propósito:
-Gestionar dinero dentro de la aplicación.
+📌 Propósito:
+Gestionar los movimientos económicos del usuario.
 
-Componentes principales:
+🧩 Componentes:
 
-Botones Depositar y Retirar
+Saldo actual
 
-Historial de transacciones
+Botones Depositar / Retirar
 
-Indicador de balance
+Historial de movimientos
 
-Formulario modal para depósito/retiro
+Formularios en pop-up
 
-Captura:
+🖼️ Captura:
 /docs/img/billetera.png
 
-Pantalla 8 – Perfil / Configuración
+👤 Pantalla 8 – Perfil / Configuración
 
-Propósito:
-Mostrar información personal, ajustes y preferencias del usuario.
+📌 Propósito:
+Mostrar información del usuario y permitir configurar la aplicación.
 
-Componentes principales:
+🧩 Componentes:
 
-Datos del perfil (nombre, correo, avatar)
+Avatar y datos del perfil
 
-Opciones de configuración (modo oscuro, notificaciones, idioma)
+Preferencias (modo oscuro, notificaciones, idioma)
 
 Botón Editar perfil
 
 Botón Cerrar sesión
 
-Captura:
+🖼️ Captura:
 /docs/img/perfil_config.png
